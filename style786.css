@@ -1,0 +1,106 @@
+/* Reset default browser styles */
+body, h1, h2, p, ul, ol, li, figure, figcaption, blockquote, dl, dd {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header-section {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.header-section h1 {
+    font-size: 36px;
+}
+
+.main {
+    padding: 20px 0;
+}
+
+.about-section, .contact-section, .apply-now-section, .login-register-section, .calculator-section {
+    background-color: #fff;
+    padding: 40px 20px;
+    margin-bottom: 20px;
+}
+
+.about-section h2, .contact-section h2, .apply-now-section h2, .login-register-section h2, .calculator-section h2 {
+    color: #007bff;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.about-section p {
+    margin-bottom: 20px;
+}
+
+.contact-section p {
+    font-size: 18px;
+}
+
+.calculator-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.calculator-form div {
+    flex: 1 1 50%;
+    margin-bottom: 20px;
+}
+
+.calculator-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.calculator-form input[type="number"], .calculator-form select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.calculator-form span.error-message {
+    color: #dc3545;
+}
+
+.calculator-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.calculator-form button:hover {
+    background-color: #0056b3;
+}
+
+.footer-section {
+    background-color: #007bff;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-section p {
+    font-size: 14px;
+}

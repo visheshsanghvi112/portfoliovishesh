@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Solutions Landing Page</title>
+    <link rel="stylesheet" href="style786.css">
+</head>
+
+<body>
+
+    <!-- Header Section -->
+    <header class="header-section">
+        <div class="container">
+            <h1>Welcome to Financial Solutions</h1>
+            <!-- Navigation menu can be added here -->
+        </div>
+    </header>
+
+    <!-- Main Content Sections -->
+    <main>
+
+        <!-- About Section -->
+        <section class="about-section">
+            <div class="container">
+                <h2>About Financial Solutions</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla ac urna quis lectus dapibus feugiat.
+                    Ut vitae dui rhoncus, aliquet quam nec, scelerisque libero.</p>
+                <!-- Add more content as needed -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <!-- Add contact form or contact information -->
+            </div>
+        </section>
+
+        <!-- Apply Now Section -->
+        <section class="apply-now-section">
+            <div class="container">
+                <h2>Apply Now</h2>
+                <!-- Add apply now form or button -->
+            </div>
+        </section>
+
+        <!-- Login/Register Section -->
+        <section class="login-register-section">
+            <div class="container">
+                <h2>Login / Register</h2>
+                <!-- Add login/register form or buttons -->
+            </div>
+        </section>
+
+        <!-- Calculator Section -->
+        <section class="calculator-section">
+            <div class="container">
+                <h2>Loan Calculator</h2>
+                <div class="calculator-form">
+                    <div>
+                        <label for="amount">Loan Amount ($):</label>
+                        <input type="number" id="amount" placeholder="Enter loan amount" min="1000" step="1000" required>
+                        <span class="error-message" id="amount-error"></span>
+                    </div>
+                    <div>
+                        <label for="term">Loan Term (Years):</label>
+                        <input type="number" id="term" placeholder="Enter loan term" min="1" required>
+                        <span class="error-message" id="term-error"></span>
+                    </div>
+                    <div>
+                        <label for="frequency">Payment Frequency:</label>
+                        <select id="frequency" required>
+                            <option value="" disabled selected>Select frequency</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="biweekly">Biweekly</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label>Estimated Payment:</label>
+                        <span id="payment"></span>
+                    </div>
+                    <button id="calculate-btn">Calculate</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer class="footer-section">
+        <div class="container">
+            <p>&copy; 2024 Financial Solutions. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="calculator.js"></script>
+</body>
+
+</html>

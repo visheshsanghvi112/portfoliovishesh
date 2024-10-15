@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Management System</title>
+</head>
+<body>
+    <h1>Student Management System</h1>
+    
+    <!-- Flash Messages -->
+    {% with messages = get_flashed_messages(with_categories=true) %}
+      {% if messages %}
+        <ul>
+          {% for category, message in messages %}
+            <li class="{{ category }}">{{ message }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endwith %}
+
+    <form action="/add" method="POST">
+        <input type="text" name="name" placeholder="Name" required>
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="text" name="course" placeholder="Course" required>
+        <button type="submit">Add Student</button>
+    </form>
+
+    <h2>Student List</h2>
+    <ul>
+        {% for student in students %}
+        <li>
+            {{ student['name'] }} (Age: {{ student['age'] }}, Course: {{ student['course'] }}) 
+            <a href="/delete/{{ student['name'] }}">Delete</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
